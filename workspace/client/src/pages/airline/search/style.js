@@ -75,9 +75,8 @@ S.DivDeaArrFont2 = styled.div`
     line-height: 34px;
     font-weight: 700;
     position: absolute;
-    left: calc(40% - -6.01px);
+    left: calc(40% - -46.01px);
     top: calc(50% - 20.5px);
-    width: 200px;
     height: 41px;
     ${flexCenter}
 `;
@@ -178,6 +177,7 @@ S.DivFilterActive = styled.div`
     position: absolute;
     left: 91px;
     top: 13px;
+    cursor: pointer;
 `;
 
 S.DivFilterActiveFont = styled.div`
@@ -194,6 +194,7 @@ S.DivFilterActiveFont = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    cursor: pointer;
 `;
 
 // FliterConatainer==============================================================
@@ -988,7 +989,47 @@ S.ImageFlightSchdue2 = styled.img`
     height: 20px;
 `;
 
-S.DDFDF = styled.div`
-`
-export default S;
+S.DivFilterInitContainer = styled.div`
+    background: #ffffff;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #c2c2c2;
+    border-width: 1px;
+    width: 100px;
+    height: 32px;
+    position: absolute;
+    left: 190px;
+    top: 13px;
+    cursor: pointer;
+`;
 
+S.ImageFilterInit = styled.div`
+    background: #ffffff;
+    border-radius: 6px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 11px;
+    top: calc(50% - 7.27px);
+    object-fit: cover;
+    cursor: pointer;
+`;
+
+S.DivFilterInit = styled.div`
+    color: #666666;
+    text-align: center;
+    font-size: 12px;
+    line-height: 30px;
+    letter-spacing: -0.4px;
+    font-weight: 400;
+    position: absolute;
+    left: 30px;
+    top: 8px;
+    width: 60px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+`;
+export default S;

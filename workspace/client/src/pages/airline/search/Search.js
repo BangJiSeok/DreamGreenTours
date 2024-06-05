@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import S from "./style";
 import { ThemeProvider } from "styled-components";
 import theme from "../../../global/theme";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRotateRight, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FilterConatainer from "./FilterConatainer";
 
@@ -64,7 +64,7 @@ const Search = () => {
                         <S.DivDeaArrFont1>김포</S.DivDeaArrFont1>
                         <>
                             <S.ImageChangeArrow
-                                src={`${process.env.PUBLIC_URL}/img/picture/`}
+                                src={`${process.env.PUBLIC_URL}/img/icon/move_arrow.png`}
                             ></S.ImageChangeArrow>
                             <S.DivChageArrowInSide>왕복</S.DivChageArrowInSide>
                         </>
@@ -91,7 +91,7 @@ const Search = () => {
                         </div>
                     </S.DivSchduelFrame>
                     <S.DivChangeFrame>
-                        <div class="div3">변경</div>
+                        <div class="div3" style={{ color: "white" }}>변경</div>
                     </S.DivChangeFrame>
                 </S.DivHearderInImage>
             </S.DivHederImage>
@@ -116,10 +116,10 @@ const Search = () => {
                             <FontAwesomeIcon icon={faXmark} />
                         </S.DivFilterActiveFont>
                     </S.DivFilterActive>
-                    <div class="link4">
-                        <img class="span-spr" src="span-spr0.png" />
-                        <div class="div2">필터초기화</div>
-                    </div>
+                    <S.DivFilterInitContainer>
+                        <S.ImageFilterInit> <FontAwesomeIcon icon={faArrowRotateRight} /></S.ImageFilterInit>
+                        <S.DivFilterInit>필터초기화</S.DivFilterInit>
+                    </S.DivFilterInitContainer>
                 </S.DivFilterFrame>
 
                 <S.DivAirListConatainer>

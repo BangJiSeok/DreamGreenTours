@@ -3,7 +3,7 @@
 import mongoose from 'mongoose';
 
 // MongoDB 연결 URL
-const mongoURI = 'mongodb+srv://fronttwo24:1234@cluster0.n09vftn.mongodb.net/';
+const mongoURI = 'mongodb+srv://app:1234@app.b0hrc9k.mongodb.net/';
 
 // 몽고DB에 연결
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })

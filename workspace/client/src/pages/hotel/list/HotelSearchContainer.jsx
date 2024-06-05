@@ -85,7 +85,7 @@ const HotelSearchContainer = ({ location, showHotelSearch }) => {
 
                     <S.DivPerson onClick={togglePersonSeat}>
                         <S.DivImagePerson>
-                            <S.ImagePerson src="/img/icon/person.png" />
+                            <S.ImagePerson src={`${process.env.PUBLIC_URL}/img/icon/person.png`} />
                         </S.DivImagePerson>
                         <S.DivPersonCount>
                             {renderPersonCountText()}
@@ -94,7 +94,7 @@ const HotelSearchContainer = ({ location, showHotelSearch }) => {
 
                     <S.DivRoom1 onClick={toggleRoom}>
                         <S.DivImageRoom1>
-                            <S.ImageRoom src="/img/icon/room.png" />
+                            <S.ImageRoom src={`${process.env.PUBLIC_URL}/img/icon/room.png`} />
                         </S.DivImageRoom1>
                         <S.DivRoomCount>{renderRoomCountText()}</S.DivRoomCount>
                     </S.DivRoom1>

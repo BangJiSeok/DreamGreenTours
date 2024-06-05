@@ -8,14 +8,14 @@ import router from "./routes/router";
 import { ThemeProvider } from "styled-components";
 
 function App() {
-  return (
-    <>
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <RouterProvider router={router} />
-      </ThemeProvider>
-    </>
-  );
+    return (
+        <>
+            <ThemeProvider theme={theme}>
+                <GlobalStyle />
+                <RouterProvider router={router} />
+            </ThemeProvider>
+        </>
+    );
 }
 
 export default App;
